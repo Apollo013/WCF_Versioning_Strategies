@@ -1,10 +1,9 @@
 ﻿using Models;
 
-namespace WCFAgileStrategy.Service.Services
+namespace WCFSemiStrictStrategy.Service.Services
 {
-    public class EmployeeService : IEmployeeService
+    public class EmployeeService : IEmployeeService_V2
     {
-        // ADDED METHOD FOR V2
         public Employee GetEmployee(int id)
         {
             if (id == 1)
@@ -16,7 +15,7 @@ namespace WCFAgileStrategy.Service.Services
 
         public Employee UpdateEmployee(Employee emp)
         {
-            return new Employee() { Id = emp.Id, Name = emp.Name };
+            return emp;
         }
     }
 }
