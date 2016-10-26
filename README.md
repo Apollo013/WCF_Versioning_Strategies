@@ -1,4 +1,5 @@
 # WCF_Versioning_Strategies
+
 A few light-weight WCF services &amp; console apps demonstrating Agile, Semi Strict, and Strict versioning strategies
 
 ---
